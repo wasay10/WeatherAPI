@@ -12,7 +12,7 @@ if response.status_code == 200:
     weather = data['weather'][0]['description']
     temperature = round(data['main']['temp'] - 273.15 , 2)
 
-    print("Weather in " + city + ": " + weather)
+    print("Weather in " + city + "is: " + weather)
     print("Temperature: " , temperature , " Celsius")
 
 else:
